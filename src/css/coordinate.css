@@ -1,0 +1,56 @@
+.coordinate,
+.coordinate-state {
+  border-color: gray;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#player1-board .coordinate--ship,
+.coordinate-state--ship {
+  border-color: rgb(69, 69, 255);
+  background-color: rgb(195, 195, 255);
+}
+
+
+
+#player2-board .coordinate:hover {
+  background-color: rgb(196, 196, 196);
+  cursor: pointer;
+}
+
+#player2-board .coordinate--miss:hover {
+  cursor: not-allowed;
+}
+
+#player2-board .coordinate--hit:hover {
+  cursor: not-allowed;
+  background-color: rgb(255, 145, 145);
+}
+
+#player1-board .coordinate--ship.coordinate--hit,
+#player2-board .coordinate--ship.coordinate--hit,
+#player2-board .coordinate-state--ship.coordinate-state--hit {
+  border-color: rgb(255, 80, 80);
+  background-color: rgb(255, 179, 179);
+}
+
+#player1-board .coordinate--ship.coordinate--sunk {
+  border-color: black;
+  background-color: rgb(255, 153, 0);
+}
+
+#player2-board .coordinate--ship.coordinate--sunk,
+#player2-board .coordinate-state--ship.coordinate-state--sunk{
+  border-color: black;
+  background-color: rgb(255, 153, 0);
+}
+
+.miss-mark {
+  inline-size: 20%;
+  block-size: 20%;
+  background-color: black;
+  border-radius: 50%;
+}
